@@ -6,7 +6,7 @@ test.describe("Hyr Tutorial", () => {
         await page.waitForLoadState("load");
         await expect(page).toHaveTitle("Basic Controls - H Y R Tutorials");
         await page.getByPlaceholder("Enter First Name").press("CapsLock");
-        await page.getByPlaceholder("Enter First Nae").pressSequentially("Birendra", {delay: 1000});
+        await page.getByPlaceholder("Enter First Name").pressSequentially("Birendra", {delay: 1000});
         await page.waitForLoadState("load");
        // await page.pause();
         await page.locator('[id="chinesechbx"]').scrollIntoViewIfNeeded();
