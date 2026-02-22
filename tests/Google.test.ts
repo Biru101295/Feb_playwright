@@ -5,7 +5,7 @@ test("Lunch Google browser", async({page})=>{
     await expect(page).toHaveTitle("Google");
 });
 
-test.only("verify sign in button is visible", async({page})=>{
+test("verify sign in button is visible", async({page})=>{
     await page.goto("https://www.google.com/");
     await page.waitForLoadState("domcontentloaded");
     //await page.pause();
